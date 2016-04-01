@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+
+    <link href="static/template.css" type="text/css" rel="stylesheet">
+
+    <script language="javascript" type="text/javascript" src="static/jquery-2.2.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="static/unterseite2.js"></script>
+</head>
+<body>
+<ul>
+    {% for nummer, item in items.iteritems() %}
+    <li>{{ escape(item) }}
+    <button class="delete" item_number="{{ nummer }}">Löschen</button>
+    </li>
+    {% end %}
+</ul>
+<br/>
+<button class="delete_all">Alles Löschen</button>
+<br/>
+Schreibe ein Text: <input type="text" name="new_line" id="new_line"><br>
+<button class="add">Hinzufügen</button>
+<br/>
+</body>
+
+<a href="/template.html">zurück zur Startseite</a>
+<html/>

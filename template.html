@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+
+    <link href="static/template.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>
+    <b>
+        <h1>Tiger</h1>
+    </b>
+</p>
+    <h5>Der Tiger ist eine in Asien verbreitete Großkatze. Er ist aufgrund seiner Größe und des charakteristischen dunklen
+    Streifenmusters auf goldgelbem bis rotbraunem Grund unverwechselbar.</h5>
+<ul>
+    {% for item in items %}
+    <li>{{ escape(item) }}</li>
+    {% end %}
+</ul>
+<br/>
+<h6>What Do you know about Tiger?</h6>
+<br/>
+    <textarea Name="123" Rows="7" style="margin: 0px 20px; width: 380px; height: 97px;"></textarea>
+    <br/>
+    <a HREF="https://de.wikipedia.org/wiki/Tiger">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Sumatran_Tiger_Berlin_Tierpark.jpg" width="381"
+             height="254"/>
+    </a>
+<br/>
+<a href="unterseite.html">Bilder</a>
+<br/>
+<a href="unterseite2.html">?</a>
+</form>
+</body>
+</html>
